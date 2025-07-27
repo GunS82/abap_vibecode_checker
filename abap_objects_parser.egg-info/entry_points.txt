@@ -1,3 +1,0 @@
-[console_scripts]
-abap-parser = abap_objects_parser:main
-folder-analyzer = folder_analyzer:main
