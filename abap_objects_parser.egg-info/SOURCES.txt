@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+abap_objects_parser.egg-info/PKG-INFO
+abap_objects_parser.egg-info/SOURCES.txt
+abap_objects_parser.egg-info/dependency_links.txt
+abap_objects_parser.egg-info/entry_points.txt
+abap_objects_parser.egg-info/requires.txt
+abap_objects_parser.egg-info/top_level.txt

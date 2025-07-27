@@ -1,0 +1,864 @@
+{
+  "input_folder": "Real ABAP Programs",
+  "timestamp": 1753619340.5265133,
+  "total_files": 6,
+  "successful_files": 6,
+  "summary_statistics": {
+    "total_objects_by_category": {
+      "classes_and_interfaces": 7,
+      "functions": 51,
+      "database_tables": 52,
+      "other_ddic_dependencies": 120
+    },
+    "unique_objects_by_category": {
+      "classes_and_interfaces": 7,
+      "functions": 49,
+      "database_tables": 49,
+      "other_ddic_dependencies": 117
+    },
+    "base_match_statistics": {
+      "classes_and_interfaces": {
+        "total_unique": 7,
+        "existing_in_base": 7,
+        "percentage": 100.0
+      },
+      "functions": {
+        "total_unique": 49,
+        "existing_in_base": 49,
+        "percentage": 100.0
+      },
+      "database_tables": {
+        "total_unique": 49,
+        "existing_in_base": 49,
+        "percentage": 100.0
+      }
+    },
+    "overall_statistics": {
+      "total_files_analyzed": 6,
+      "successful_files": 6,
+      "failed_files": 0,
+      "total_objects_found": 230,
+      "average_objects_per_file": 38.333333333333336
+    }
+  },
+  "file_results": {
+    "CMP_MASS_READ_DATAF01.abap": {
+      "parse_result": {
+        "result": {
+          "classes_and_interfaces": [],
+          "functions": [
+            "DD_GET_NAMETAB"
+          ],
+          "database_tables": [
+            "CMP_REASON",
+            "TCURX",
+            "VBFA",
+            "VBRK",
+            "VBRP",
+            "V_KONV_CDS"
+          ],
+          "other_ddic_dependencies": [
+            "CMP_REASON",
+            "KONV",
+            "VBFA",
+            "VBRK",
+            "VBRP",
+            "WAERS",
+            "X031L"
+          ]
+        },
+        "execution_time": 0.8665151596069336,
+        "status": "success",
+        "file_size": 15697
+      },
+      "analysis": {
+        "categories": {
+          "classes_and_interfaces": {
+            "items": [],
+            "count": 0
+          },
+          "functions": {
+            "items": [
+              "DD_GET_NAMETAB"
+            ],
+            "count": 1
+          },
+          "database_tables": {
+            "items": [
+              "CMP_REASON",
+              "TCURX",
+              "VBFA",
+              "VBRK",
+              "VBRP",
+              "V_KONV_CDS"
+            ],
+            "count": 6
+          },
+          "other_ddic_dependencies": {
+            "items": [
+              "CMP_REASON",
+              "KONV",
+              "VBFA",
+              "VBRK",
+              "VBRP",
+              "WAERS",
+              "X031L"
+            ],
+            "count": 7
+          }
+        },
+        "total_objects": 14,
+        "base_match_stats": {
+          "classes_and_interfaces": {
+            "existing": 0,
+            "total": 0,
+            "percentage": 0
+          },
+          "functions": {
+            "existing": 1,
+            "total": 1,
+            "percentage": 100.0
+          },
+          "database_tables": {
+            "existing": 6,
+            "total": 6,
+            "percentage": 100.0
+          }
+        },
+        "overall_base_match": 100.0
+      },
+      "absolute_path": "Real ABAP Programs\\CMP_MASS_READ_DATAF01.abap"
+    },
+    "RC1_IDOC_SET_STATUS.abap": {
+      "parse_result": {
+        "result": {
+          "classes_and_interfaces": [],
+          "functions": [
+            "DEQUEUE_ALL",
+            "IDOC_STATUS_WRITE_TO_DATABASE"
+          ],
+          "database_tables": [
+            "EDIDC"
+          ],
+          "other_ddic_dependencies": [
+            "BDIDOCSTAT",
+            "EDIDC"
+          ]
+        },
+        "execution_time": 0.07905840873718262,
+        "status": "success",
+        "file_size": 3150
+      },
+      "analysis": {
+        "categories": {
+          "classes_and_interfaces": {
+            "items": [],
+            "count": 0
+          },
+          "functions": {
+            "items": [
+              "DEQUEUE_ALL",
+              "IDOC_STATUS_WRITE_TO_DATABASE"
+            ],
+            "count": 2
+          },
+          "database_tables": {
+            "items": [
+              "EDIDC"
+            ],
+            "count": 1
+          },
+          "other_ddic_dependencies": {
+            "items": [
+              "BDIDOCSTAT",
+              "EDIDC"
+            ],
+            "count": 2
+          }
+        },
+        "total_objects": 5,
+        "base_match_stats": {
+          "classes_and_interfaces": {
+            "existing": 0,
+            "total": 0,
+            "percentage": 0
+          },
+          "functions": {
+            "existing": 2,
+            "total": 2,
+            "percentage": 100.0
+          },
+          "database_tables": {
+            "existing": 1,
+            "total": 1,
+            "percentage": 100.0
+          }
+        },
+        "overall_base_match": 100.0
+      },
+      "absolute_path": "Real ABAP Programs\\RC1_IDOC_SET_STATUS.abap"
+    },
+    "RSTABLESIZE.abap": {
+      "parse_result": {
+        "result": {
+          "classes_and_interfaces": [],
+          "functions": [
+            "DB_EXISTS_TABLE",
+            "REUSE_ALV_FIELDCATALOG_MERGE",
+            "REUSE_ALV_GRID_DISPLAY",
+            "RS_DD_SHOW",
+            "RS_DD_SQLT_EDIT",
+            "SCCR_GET_NAMETAB_AND_TABLEN"
+          ],
+          "database_tables": [
+            "DD02L",
+            "EUINFO",
+            "T000",
+            "TADIR",
+            "VRSTABC"
+          ],
+          "other_ddic_dependencies": [
+            "CCTABSIZE",
+            "DD02L",
+            "SLIS_FIELDCAT_ALV",
+            "SLIS_LAYOUT_ALV",
+            "SLIS_T_FIELDCAT_ALV",
+            "TABNAME",
+            "VRSTABC",
+            "X030L"
+          ]
+        },
+        "execution_time": 0.017776012420654297,
+        "status": "success",
+        "file_size": 9694
+      },
+      "analysis": {
+        "categories": {
+          "classes_and_interfaces": {
+            "items": [],
+            "count": 0
+          },
+          "functions": {
+            "items": [
+              "DB_EXISTS_TABLE",
+              "REUSE_ALV_FIELDCATALOG_MERGE",
+              "REUSE_ALV_GRID_DISPLAY",
+              "RS_DD_SHOW",
+              "RS_DD_SQLT_EDIT",
+              "SCCR_GET_NAMETAB_AND_TABLEN"
+            ],
+            "count": 6
+          },
+          "database_tables": {
+            "items": [
+              "DD02L",
+              "EUINFO",
+              "T000",
+              "TADIR",
+              "VRSTABC"
+            ],
+            "count": 5
+          },
+          "other_ddic_dependencies": {
+            "items": [
+              "CCTABSIZE",
+              "DD02L",
+              "SLIS_FIELDCAT_ALV",
+              "SLIS_LAYOUT_ALV",
+              "SLIS_T_FIELDCAT_ALV",
+              "TABNAME",
+              "VRSTABC",
+              "X030L"
+            ],
+            "count": 8
+          }
+        },
+        "total_objects": 19,
+        "base_match_stats": {
+          "classes_and_interfaces": {
+            "existing": 0,
+            "total": 0,
+            "percentage": 0
+          },
+          "functions": {
+            "existing": 6,
+            "total": 6,
+            "percentage": 100.0
+          },
+          "database_tables": {
+            "existing": 5,
+            "total": 5,
+            "percentage": 100.0
+          }
+        },
+        "overall_base_match": 100.0
+      },
+      "absolute_path": "Real ABAP Programs\\RSTABLESIZE.abap"
+    },
+    "ZSD_PRINT_MX_SD_F01.abap": {
+      "parse_result": {
+        "result": {
+          "classes_and_interfaces": [
+            "ZCL_SD_HYB_DMS_MH1",
+            "ZCL_SD_HYB_DMS_MH3",
+            "ZCL_TVARVC"
+          ],
+          "functions": [
+            "CONVERSION_EXIT_MATN1_OUTPUT",
+            "FP_FUNCTION_MODULE_NAME",
+            "FP_JOB_CLOSE",
+            "FP_JOB_OPEN",
+            "ZSD_GET_MAT_NAME",
+            "Z_UNI_SD_GET_KUNNR_BANK",
+            "Z_UNI_SD_GET_KUNNR_NAME_ADR"
+          ],
+          "database_tables": [
+            "ADRC",
+            "AUSP",
+            "CABN",
+            "DRAW",
+            "J_3RJ_UOM_CONV",
+            "LIKP",
+            "LIPS",
+            "MATDOC",
+            "T001Z",
+            "T006A",
+            "TVARVC",
+            "TWLAD",
+            "VBAK",
+            "VBAP",
+            "VBPA"
+          ],
+          "other_ddic_dependencies": [
+            "ABAP_BOOL",
+            "AUSP",
+            "BAPIRET2",
+            "CHAR255",
+            "DATUM",
+            "FUNCNAME",
+            "GTY_MX_DATA",
+            "KUNNR",
+            "SFPDOCPARAMS",
+            "SFPOUTPUTPARAMS",
+            "STCD1",
+            "STCD3",
+            "TT_AUSP",
+            "ZSD_HYB_DMS_VBELN_T",
+            "ZSD_HYB_T_GROUP_DELIV_DEL",
+            "ZSD_MH3"
+          ]
+        },
+        "execution_time": 0.0958559513092041,
+        "status": "success",
+        "file_size": 35626
+      },
+      "analysis": {
+        "categories": {
+          "classes_and_interfaces": {
+            "items": [
+              "ZCL_SD_HYB_DMS_MH1",
+              "ZCL_SD_HYB_DMS_MH3",
+              "ZCL_TVARVC"
+            ],
+            "count": 3
+          },
+          "functions": {
+            "items": [
+              "CONVERSION_EXIT_MATN1_OUTPUT",
+              "FP_FUNCTION_MODULE_NAME",
+              "FP_JOB_CLOSE",
+              "FP_JOB_OPEN",
+              "ZSD_GET_MAT_NAME",
+              "Z_UNI_SD_GET_KUNNR_BANK",
+              "Z_UNI_SD_GET_KUNNR_NAME_ADR"
+            ],
+            "count": 7
+          },
+          "database_tables": {
+            "items": [
+              "ADRC",
+              "AUSP",
+              "CABN",
+              "DRAW",
+              "J_3RJ_UOM_CONV",
+              "LIKP",
+              "LIPS",
+              "MATDOC",
+              "T001Z",
+              "T006A",
+              "TVARVC",
+              "TWLAD",
+              "VBAK",
+              "VBAP",
+              "VBPA"
+            ],
+            "count": 15
+          },
+          "other_ddic_dependencies": {
+            "items": [
+              "ABAP_BOOL",
+              "AUSP",
+              "BAPIRET2",
+              "CHAR255",
+              "DATUM",
+              "FUNCNAME",
+              "GTY_MX_DATA",
+              "KUNNR",
+              "SFPDOCPARAMS",
+              "SFPOUTPUTPARAMS",
+              "STCD1",
+              "STCD3",
+              "TT_AUSP",
+              "ZSD_HYB_DMS_VBELN_T",
+              "ZSD_HYB_T_GROUP_DELIV_DEL",
+              "ZSD_MH3"
+            ],
+            "count": 16
+          }
+        },
+        "total_objects": 41,
+        "base_match_stats": {
+          "classes_and_interfaces": {
+            "existing": 3,
+            "total": 3,
+            "percentage": 100.0
+          },
+          "functions": {
+            "existing": 7,
+            "total": 7,
+            "percentage": 100.0
+          },
+          "database_tables": {
+            "existing": 15,
+            "total": 15,
+            "percentage": 100.0
+          }
+        },
+        "overall_base_match": 100.0
+      },
+      "absolute_path": "Real ABAP Programs\\ZSD_PRINT_MX_SD_F01.abap"
+    },
+    "rbdapp01.abap": {
+      "parse_result": {
+        "result": {
+          "classes_and_interfaces": [],
+          "functions": [
+            "ALE_FTCH_DATA_SEGMENTS_OF_IDOC",
+            "ALE_SERIAL_PROCESS",
+            "ALE_SER_PROTOCOLL",
+            "APPLICATION_IDOC_POST_IMMEDIAT",
+            "BDEOIO_CHECK_ACTIVE_IN",
+            "BDEOIO_GET_ID_DETAILS",
+            "DEQUEUE_ALL",
+            "IDOC_OUTPUT_LIST",
+            "IDOC_READ_GLOBAL",
+            "SAPGUI_PROGRESS_INDICATOR",
+            "SPBT_GET_CURR_RESOURCE_INFO",
+            "SPBT_INITIALIZE"
+          ],
+          "database_tables": [
+            "EDIDC",
+            "TBD55"
+          ],
+          "other_ddic_dependencies": [
+            "ALELIST",
+            "BDEOIO_QUEUE_COUNTER",
+            "BDEOIO_QUEUE_NAME",
+            "BDSERINSTR",
+            "CHAR32",
+            "EDIDC",
+            "EDIDD",
+            "EDI_DOCNUM",
+            "EDI_TEXT60",
+            "EDI_UPDDAT",
+            "EDI_UPDTIM",
+            "GY_COUNTER",
+            "GY_TASK",
+            "PARTO_ALE",
+            "SERIAL",
+            "SYTABIX",
+            "XFELD"
+          ]
+        },
+        "execution_time": 0.08302855491638184,
+        "status": "success",
+        "file_size": 40730
+      },
+      "analysis": {
+        "categories": {
+          "classes_and_interfaces": {
+            "items": [],
+            "count": 0
+          },
+          "functions": {
+            "items": [
+              "ALE_FTCH_DATA_SEGMENTS_OF_IDOC",
+              "ALE_SERIAL_PROCESS",
+              "ALE_SER_PROTOCOLL",
+              "APPLICATION_IDOC_POST_IMMEDIAT",
+              "BDEOIO_CHECK_ACTIVE_IN",
+              "BDEOIO_GET_ID_DETAILS",
+              "DEQUEUE_ALL",
+              "IDOC_OUTPUT_LIST",
+              "IDOC_READ_GLOBAL",
+              "SAPGUI_PROGRESS_INDICATOR",
+              "SPBT_GET_CURR_RESOURCE_INFO",
+              "SPBT_INITIALIZE"
+            ],
+            "count": 12
+          },
+          "database_tables": {
+            "items": [
+              "EDIDC",
+              "TBD55"
+            ],
+            "count": 2
+          },
+          "other_ddic_dependencies": {
+            "items": [
+              "ALELIST",
+              "BDEOIO_QUEUE_COUNTER",
+              "BDEOIO_QUEUE_NAME",
+              "BDSERINSTR",
+              "CHAR32",
+              "EDIDC",
+              "EDIDD",
+              "EDI_DOCNUM",
+              "EDI_TEXT60",
+              "EDI_UPDDAT",
+              "EDI_UPDTIM",
+              "GY_COUNTER",
+              "GY_TASK",
+              "PARTO_ALE",
+              "SERIAL",
+              "SYTABIX",
+              "XFELD"
+            ],
+            "count": 17
+          }
+        },
+        "total_objects": 31,
+        "base_match_stats": {
+          "classes_and_interfaces": {
+            "existing": 0,
+            "total": 0,
+            "percentage": 0
+          },
+          "functions": {
+            "existing": 12,
+            "total": 12,
+            "percentage": 100.0
+          },
+          "database_tables": {
+            "existing": 2,
+            "total": 2,
+            "percentage": 100.0
+          }
+        },
+        "overall_base_match": 100.0
+      },
+      "absolute_path": "Real ABAP Programs\\rbdapp01.abap"
+    },
+    "zdtp_massdownload.abap": {
+      "parse_result": {
+        "result": {
+          "classes_and_interfaces": [
+            "CL_GUI_FRONTEND_SERVICES",
+            "CL_O2_API_XSLTDESC",
+            "CL_OO_CLASSNAME_SERVICE",
+            "CX_ROOT"
+          ],
+          "functions": [
+            "CONVERSION_EXIT_ALPHA_OUTPUT",
+            "DD_DOMA_GET",
+            "DD_INT_TABL_GET",
+            "DD_TABL_EXPAND",
+            "DOCU_GET",
+            "DOC_OBJECT_GET",
+            "DYNPRO_PROCESSINGLOGIC",
+            "F4_DD_ALLTYPES",
+            "FILE_GET_NAME",
+            "FUNCTION_IMPORT_DOKU",
+            "PFL_CHECK_DIRECTORY",
+            "REPOSITORY_INFO_SYSTEM_F4",
+            "RS_IMPORT_DYNPRO",
+            "RS_SCRP_FIELDS_RAW_TO_CHAR",
+            "RS_SCRP_HEADER_RAW_TO_CHAR",
+            "RS_TREE_CONSTRUCT",
+            "RS_TREE_EXPAND",
+            "RS_TREE_LIST_DISPLAY",
+            "SAPGUI_PROGRESS_INDICATOR",
+            "SEO_INHERITANC_READ",
+            "SOTR_GET_TEXT_KEY",
+            "SXPG_COMMAND_CHECK",
+            "SXPG_COMMAND_EXECUTE"
+          ],
+          "database_tables": [
+            "D020T",
+            "D347T",
+            "DD02L",
+            "DD02T",
+            "DD40L",
+            "DD40T",
+            "REPOSRC",
+            "SEOCOMPO",
+            "SEOCOMPODF",
+            "SEOCOMPOTX",
+            "SEOREDEF",
+            "T100",
+            "T100A",
+            "TADIR",
+            "TFDIR",
+            "TFTIT",
+            "TLIBV",
+            "TRDIRE",
+            "TRDIRT",
+            "VSEOCLASS",
+            "VSEOIMPLEM",
+            "VSEOMETHOD",
+            "V_FDIR"
+          ],
+          "other_ddic_dependencies": [
+            "ABAP_BOOL",
+            "ARBGB",
+            "BTCTEXT80",
+            "BTCXPM",
+            "D020S",
+            "D021S",
+            "D022S",
+            "D347T",
+            "DD02V",
+            "DD03P",
+            "DD07V",
+            "DOMNAME",
+            "DOMVALUE_L",
+            "FILESYS_D",
+            "FLAG",
+            "FOR",
+            "FUNCT",
+            "GENFLAG",
+            "LOWERCASE",
+            "MATCH_RESULT",
+            "MATCH_RESULT_TAB",
+            "NAMESPACE",
+            "O2PAGELINE_TABLE",
+            "O2XSLTATTR",
+            "PROGRAM",
+            "RANGE_CTYP",
+            "ROWTYPE",
+            "RSEXC",
+            "RSEXP",
+            "RSIMP",
+            "RSTBL",
+            "SCR_CHFLD",
+            "SCR_CHHEAD",
+            "SEOCLSKEY",
+            "SEOCLSNAME",
+            "SEOCPDKEY",
+            "SEOREDEF",
+            "SEOR_INHERITANCE_R",
+            "SNODETEXT",
+            "SOTR_CONC",
+            "SOTR_TXT",
+            "SSTMNT",
+            "STOKES",
+            "SYOPSYS",
+            "SYTABIX",
+            "TCLASS",
+            "TCONCEPT",
+            "TDICTFILENAME",
+            "TDICTTABLE",
+            "TDICTTABLESTRUCTURE",
+            "TDOMAINSTRUCTURE",
+            "TEXT20",
+            "TEXTPOOL",
+            "TFUNCTION",
+            "TGUITITLE",
+            "TINCLUDE",
+            "TINTERFACE",
+            "TINTMETHOD",
+            "TLINE",
+            "TMESSAGE",
+            "TMETHOD",
+            "TPROGRAM",
+            "TSCREENFLOW",
+            "TTABLETYPE",
+            "TTEXTTABLE",
+            "TTRANSFORMATION",
+            "TTYPENAME",
+            "TTYPKIND",
+            "VAL_TEXT",
+            "VSEOIMPLEM"
+          ]
+        },
+        "execution_time": 0.9327151775360107,
+        "status": "success",
+        "file_size": 405866
+      },
+      "analysis": {
+        "categories": {
+          "classes_and_interfaces": {
+            "items": [
+              "CL_GUI_FRONTEND_SERVICES",
+              "CL_O2_API_XSLTDESC",
+              "CL_OO_CLASSNAME_SERVICE",
+              "CX_ROOT"
+            ],
+            "count": 4
+          },
+          "functions": {
+            "items": [
+              "CONVERSION_EXIT_ALPHA_OUTPUT",
+              "DD_DOMA_GET",
+              "DD_INT_TABL_GET",
+              "DD_TABL_EXPAND",
+              "DOCU_GET",
+              "DOC_OBJECT_GET",
+              "DYNPRO_PROCESSINGLOGIC",
+              "F4_DD_ALLTYPES",
+              "FILE_GET_NAME",
+              "FUNCTION_IMPORT_DOKU",
+              "PFL_CHECK_DIRECTORY",
+              "REPOSITORY_INFO_SYSTEM_F4",
+              "RS_IMPORT_DYNPRO",
+              "RS_SCRP_FIELDS_RAW_TO_CHAR",
+              "RS_SCRP_HEADER_RAW_TO_CHAR",
+              "RS_TREE_CONSTRUCT",
+              "RS_TREE_EXPAND",
+              "RS_TREE_LIST_DISPLAY",
+              "SAPGUI_PROGRESS_INDICATOR",
+              "SEO_INHERITANC_READ",
+              "SOTR_GET_TEXT_KEY",
+              "SXPG_COMMAND_CHECK",
+              "SXPG_COMMAND_EXECUTE"
+            ],
+            "count": 23
+          },
+          "database_tables": {
+            "items": [
+              "D020T",
+              "D347T",
+              "DD02L",
+              "DD02T",
+              "DD40L",
+              "DD40T",
+              "REPOSRC",
+              "SEOCOMPO",
+              "SEOCOMPODF",
+              "SEOCOMPOTX",
+              "SEOREDEF",
+              "T100",
+              "T100A",
+              "TADIR",
+              "TFDIR",
+              "TFTIT",
+              "TLIBV",
+              "TRDIRE",
+              "TRDIRT",
+              "VSEOCLASS",
+              "VSEOIMPLEM",
+              "VSEOMETHOD",
+              "V_FDIR"
+            ],
+            "count": 23
+          },
+          "other_ddic_dependencies": {
+            "items": [
+              "ABAP_BOOL",
+              "ARBGB",
+              "BTCTEXT80",
+              "BTCXPM",
+              "D020S",
+              "D021S",
+              "D022S",
+              "D347T",
+              "DD02V",
+              "DD03P",
+              "DD07V",
+              "DOMNAME",
+              "DOMVALUE_L",
+              "FILESYS_D",
+              "FLAG",
+              "FOR",
+              "FUNCT",
+              "GENFLAG",
+              "LOWERCASE",
+              "MATCH_RESULT",
+              "MATCH_RESULT_TAB",
+              "NAMESPACE",
+              "O2PAGELINE_TABLE",
+              "O2XSLTATTR",
+              "PROGRAM",
+              "RANGE_CTYP",
+              "ROWTYPE",
+              "RSEXC",
+              "RSEXP",
+              "RSIMP",
+              "RSTBL",
+              "SCR_CHFLD",
+              "SCR_CHHEAD",
+              "SEOCLSKEY",
+              "SEOCLSNAME",
+              "SEOCPDKEY",
+              "SEOREDEF",
+              "SEOR_INHERITANCE_R",
+              "SNODETEXT",
+              "SOTR_CONC",
+              "SOTR_TXT",
+              "SSTMNT",
+              "STOKES",
+              "SYOPSYS",
+              "SYTABIX",
+              "TCLASS",
+              "TCONCEPT",
+              "TDICTFILENAME",
+              "TDICTTABLE",
+              "TDICTTABLESTRUCTURE",
+              "TDOMAINSTRUCTURE",
+              "TEXT20",
+              "TEXTPOOL",
+              "TFUNCTION",
+              "TGUITITLE",
+              "TINCLUDE",
+              "TINTERFACE",
+              "TINTMETHOD",
+              "TLINE",
+              "TMESSAGE",
+              "TMETHOD",
+              "TPROGRAM",
+              "TSCREENFLOW",
+              "TTABLETYPE",
+              "TTEXTTABLE",
+              "TTRANSFORMATION",
+              "TTYPENAME",
+              "TTYPKIND",
+              "VAL_TEXT",
+              "VSEOIMPLEM"
+            ],
+            "count": 70
+          }
+        },
+        "total_objects": 120,
+        "base_match_stats": {
+          "classes_and_interfaces": {
+            "existing": 4,
+            "total": 4,
+            "percentage": 100.0
+          },
+          "functions": {
+            "existing": 23,
+            "total": 23,
+            "percentage": 100.0
+          },
+          "database_tables": {
+            "existing": 23,
+            "total": 23,
+            "percentage": 100.0
+          }
+        },
+        "overall_base_match": 100.0
+      },
+      "absolute_path": "Real ABAP Programs\\zdtp_massdownload.abap"
+    }
+  }
+}

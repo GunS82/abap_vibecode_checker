@@ -1,0 +1,224 @@
+Metadata-Version: 2.4
+Name: abap-objects-parser
+Version: 1.0.0
+Summary: ABAP Objects Parser - анализатор зависимостей ABAP кода
+Author: ABAP Parser Team
+Project-URL: Homepage, https://github.com/your-username/abap-parser
+Project-URL: Repository, https://github.com/your-username/abap-parser
+Project-URL: Issues, https://github.com/your-username/abap-parser/issues
+Keywords: abap,parser,sap,dependencies,analysis
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Software Development :: Code Generators
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Provides-Extra: analysis
+Requires-Dist: tabulate>=0.9.0; extra == "analysis"
+Requires-Dist: pandas>=1.5.0; extra == "analysis"
+Provides-Extra: dev
+Requires-Dist: pytest>=7.0.0; extra == "dev"
+Requires-Dist: pytest-cov>=4.0.0; extra == "dev"
+Requires-Dist: black>=22.0.0; extra == "dev"
+Requires-Dist: flake8>=5.0.0; extra == "dev"
+Requires-Dist: mypy>=1.0.0; extra == "dev"
+Provides-Extra: all
+Requires-Dist: tabulate>=0.9.0; extra == "all"
+Requires-Dist: pandas>=1.5.0; extra == "all"
+Requires-Dist: pytest>=7.0.0; extra == "all"
+Requires-Dist: pytest-cov>=4.0.0; extra == "all"
+Requires-Dist: black>=22.0.0; extra == "all"
+Requires-Dist: flake8>=5.0.0; extra == "all"
+Requires-Dist: mypy>=1.0.0; extra == "all"
+
+# ABAP Гибридный Синтаксический Анализатор
+
+Программа для анализа ABAP кода и извлечения зависимостей (таблицы БД, функции, классы, интерфейсы, DDIC объекты) с использованием гибридного подхода на основе регулярных выражений.
+
+## Описание
+
+Парсер реализует алгоритм "Гибридный Синтаксический Анализатор", который сочетает:
+- **Глобальный анализ** для сложных SQL-запросов с поддержкой псевдонимов и JOIN
+- **Построчный анализ** для простых конструкций ABAP
+- **Контекстную обработку** для минимизации ложных срабатываний
+
+## Возможности
+
+### Поддерживаемые конструкции:
+
+#### SQL и работа с БД:
+- `SELECT` запросы с `JOIN`, псевдонимами и подзапросами
+- `UPDATE`, `INSERT`, `DELETE`, `MODIFY` операции
+- Разрешение псевдонимов (alias) в сложных запросах
+- Поддержка конструкций с тильдой (`table~field`)
+
+#### Функции:
+- `CALL FUNCTION 'FUNCTION_NAME'`
+- Многострочные вызовы функций
+
+#### Классы и интерфейсы:
+- `INHERITING FROM class_name`
+- `INTERFACES interface_name`
+- `TYPE REF TO class_name`
+- Статические вызовы `class=>method`
+- Поддержка паттернов `(Z/Y)CL_*` и `IF_*`
+
+#### DDIC зависимости:
+- `DATA variable TYPE structure`
+- `DATA variable LIKE structure`
+- Фильтрация базовых типов ABAP
+- Исключение системных полей
+
+### Обработка комментариев:
+- Блочные комментарии `/* ... */`
+- Строчные комментарии `* ...`
+- Комментарии после кавычек `"...`
+
+## Установка и использование
+
+### Требования
+- Python 3.6+
+- Стандартные библиотеки Python (re, json, pathlib)
+
+### Установка
+```bash
+# Клонируйте или скачайте файлы
+git clone <repository>
+cd abap-parser
+
+# Установите зависимости (опционально, для тестирования)
+pip install -r requirements.txt
+```
+
+### Использование из командной строки
+```bash
+python abap_parser.py path/to/your/file.abap
+```
+
+### Использование в коде
+```python
+from abap_parser import ABAPParser
+
+parser = ABAPParser()
+result = parser.parse_file('path/to/file.abap')
+print(result)
+```
+
+### Формат вывода
+Парсер возвращает JSON с четырьмя категориями зависимостей:
+
+```json
+{
+  "classes_and_interfaces": [
+    "CL_GUI_ALV_GRID",
+    "IF_TEST_INTERFACE",
+    "ZCL_UTILITY"
+  ],
+  "functions": [
+    "CONVERSION_EXIT_MATN1_OUTPUT",
+    "Z_CUSTOM_FUNCTION"
+  ],
+  "database_tables": [
+    "MARA",
+    "VBAK",
+    "VBAP"
+  ],
+  "other_ddic_dependencies": [
+    "MATNR",
+    "ZCUSTOM_TYPE"
+  ]
+}
+```
+
+## Тестирование
+
+### Запуск тестов
+```bash
+python test_parser.py
+```
+
+Тесты включают:
+- **Базовый тест** с типичными конструкциями ABAP
+- **Тест сложных SQL** с множественными JOIN и подзапросами
+- **Тест граничных случаев** для проверки фильтрации
+
+### Создание собственных тестов
+```python
+from abap_parser import ABAPParser
+
+# Создайте тестовый ABAP файл
+with open('test.abap', 'w') as f:
+    f.write(your_abap_code)
+
+# Парсите файл
+parser = ABAPParser()
+result = parser.parse_file('test.abap')
+
+# Проверьте результаты
+assert 'YOUR_TABLE' in result['database_tables']
+```
+
+## Алгоритм работы
+
+### Шаг 0: Предварительная обработка
+1. Чтение файла с поддержкой различных кодировок
+2. Удаление всех типов комментариев
+3. Нормализация кода (объединение строк, удаление лишних пробелов)
+4. Приведение к верхнему регистру
+
+### Шаг 1: Анализ SQL-запросов
+1. Изоляция SELECT блоков с учетом вложенности
+2. Создание карты псевдонимов для каждого блока
+3. Поиск использований псевдонимов с тильдой
+4. Анализ простых DML операторов
+
+### Шаг 2: Построчный анализ
+1. Поиск вызовов функций
+2. Поиск классов и интерфейсов
+3. Поиск DDIC зависимостей с фильтрацией
+
+### Шаг 3: Финальная обработка
+1. Объединение и удаление дубликатов
+2. Сортировка результатов
+3. Формирование JSON ответа
+
+## Ограничения
+
+- Парсер основан на регулярных выражениях, не строит AST
+- Не поддерживает динамический SQL
+- Ограниченная поддержка макросов и условной компиляции
+- Может пропустить зависимости в очень сложных конструкциях
+
+## Расширение функциональности
+
+Для добавления новых типов зависимостей:
+
+1. Добавьте новые регулярные выражения в соответствующие методы
+2. Обновите метод `_finalize_results()` для новой категории
+3. Добавьте тесты для новой функциональности
+
+### Пример добавления поиска INCLUDE:
+```python
+def _find_includes(self, line: str) -> Set[str]:
+    """Находит INCLUDE директивы"""
+    includes = set()
+    include_matches = re.finditer(r'\bINCLUDE\s+([A-Z_][A-Z0-9_]*)', line)
+    for match in include_matches:
+        includes.add(match.group(1))
+    return includes
+```
+
+## Поддержка
+
+Для сообщений об ошибках и предложений по улучшению создавайте issues в репозитории проекта.
+
+## Лицензия
+
+MIT License - см. файл LICENSE для деталей.

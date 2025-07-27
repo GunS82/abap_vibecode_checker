@@ -1,0 +1,1261 @@
+{
+  "input_folder": "LLM ABAP Programs",
+  "timestamp": 1753619323.9229643,
+  "total_files": 13,
+  "successful_files": 13,
+  "summary_statistics": {
+    "total_objects_by_category": {
+      "classes_and_interfaces": 17,
+      "functions": 84,
+      "database_tables": 6,
+      "other_ddic_dependencies": 116
+    },
+    "unique_objects_by_category": {
+      "classes_and_interfaces": 6,
+      "functions": 22,
+      "database_tables": 3,
+      "other_ddic_dependencies": 61
+    },
+    "base_match_statistics": {
+      "classes_and_interfaces": {
+        "total_unique": 6,
+        "existing_in_base": 6,
+        "percentage": 100.0
+      },
+      "functions": {
+        "total_unique": 22,
+        "existing_in_base": 10,
+        "percentage": 45.45454545454545
+      },
+      "database_tables": {
+        "total_unique": 3,
+        "existing_in_base": 3,
+        "percentage": 100.0
+      }
+    },
+    "overall_statistics": {
+      "total_files_analyzed": 13,
+      "successful_files": 13,
+      "failed_files": 0,
+      "total_objects_found": 223,
+      "average_objects_per_file": 17.153846153846153
+    }
+  },
+  "file_results": {
+    "DeepSeekR1.abap": {
+      "parse_result": {
+        "result": {
+          "classes_and_interfaces": [
+            "CL_SALV_TABLE"
+          ],
+          "functions": [
+            "BAPI_BILLINGDOC_CREATEFROMDATA",
+            "BAPI_OBJREL_GETDETAILEDLIST",
+            "BAPI_OUTB_DELIVERY_CREATE_SLS",
+            "BAPI_SALESORDER_CHANGE",
+            "BAPI_SALESORDER_GETDETAILEDLIST",
+            "BAPI_TRANSACTION_COMMIT"
+          ],
+          "database_tables": [],
+          "other_ddic_dependencies": [
+            "BAPISDHD1",
+            "BAPISDITM",
+            "BAPI_OBJ_REL",
+            "VBELN_VF",
+            "VBELN_VL"
+          ]
+        },
+        "execution_time": 0.5164101123809814,
+        "status": "success",
+        "file_size": 2893
+      },
+      "analysis": {
+        "categories": {
+          "classes_and_interfaces": {
+            "items": [
+              "CL_SALV_TABLE"
+            ],
+            "count": 1
+          },
+          "functions": {
+            "items": [
+              "BAPI_BILLINGDOC_CREATEFROMDATA",
+              "BAPI_OBJREL_GETDETAILEDLIST",
+              "BAPI_OUTB_DELIVERY_CREATE_SLS",
+              "BAPI_SALESORDER_CHANGE",
+              "BAPI_SALESORDER_GETDETAILEDLIST",
+              "BAPI_TRANSACTION_COMMIT"
+            ],
+            "count": 6
+          },
+          "database_tables": {
+            "items": [],
+            "count": 0
+          },
+          "other_ddic_dependencies": {
+            "items": [
+              "BAPISDHD1",
+              "BAPISDITM",
+              "BAPI_OBJ_REL",
+              "VBELN_VF",
+              "VBELN_VL"
+            ],
+            "count": 5
+          }
+        },
+        "total_objects": 12,
+        "base_match_stats": {
+          "classes_and_interfaces": {
+            "existing": 1,
+            "total": 1,
+            "percentage": 100.0
+          },
+          "functions": {
+            "existing": 4,
+            "total": 6,
+            "percentage": 66.66666666666666
+          },
+          "database_tables": {
+            "existing": 0,
+            "total": 0,
+            "percentage": 0
+          }
+        },
+        "overall_base_match": 71.42857142857143
+      },
+      "absolute_path": "LLM ABAP Programs\\DeepSeekR1.abap"
+    },
+    "DeepSeekV3.abap": {
+      "parse_result": {
+        "result": {
+          "classes_and_interfaces": [],
+          "functions": [
+            "BAPI_BILLINGDOC_CREATEFROMDATA",
+            "BAPI_OUTB_DELIVERY_CREATE_SLS",
+            "BAPI_SALESORDER_CHANGE",
+            "BAPI_SALESORDER_GETDETAIL",
+            "BAPI_SALESORDER_GETDOCFLOW",
+            "BAPI_TRANSACTION_COMMIT",
+            "REUSE_ALV_GRID_DISPLAY"
+          ],
+          "database_tables": [],
+          "other_ddic_dependencies": [
+            "BAPIRET2",
+            "BAPISDFLOW",
+            "BAPISDHD1",
+            "BAPISDITM",
+            "VBELN_VF",
+            "VBELN_VL"
+          ]
+        },
+        "execution_time": 0.021759033203125,
+        "status": "success",
+        "file_size": 2624
+      },
+      "analysis": {
+        "categories": {
+          "classes_and_interfaces": {
+            "items": [],
+            "count": 0
+          },
+          "functions": {
+            "items": [
+              "BAPI_BILLINGDOC_CREATEFROMDATA",
+              "BAPI_OUTB_DELIVERY_CREATE_SLS",
+              "BAPI_SALESORDER_CHANGE",
+              "BAPI_SALESORDER_GETDETAIL",
+              "BAPI_SALESORDER_GETDOCFLOW",
+              "BAPI_TRANSACTION_COMMIT",
+              "REUSE_ALV_GRID_DISPLAY"
+            ],
+            "count": 7
+          },
+          "database_tables": {
+            "items": [],
+            "count": 0
+          },
+          "other_ddic_dependencies": {
+            "items": [
+              "BAPIRET2",
+              "BAPISDFLOW",
+              "BAPISDHD1",
+              "BAPISDITM",
+              "VBELN_VF",
+              "VBELN_VL"
+            ],
+            "count": 6
+          }
+        },
+        "total_objects": 13,
+        "base_match_stats": {
+          "classes_and_interfaces": {
+            "existing": 0,
+            "total": 0,
+            "percentage": 0
+          },
+          "functions": {
+            "existing": 5,
+            "total": 7,
+            "percentage": 71.42857142857143
+          },
+          "database_tables": {
+            "existing": 0,
+            "total": 0,
+            "percentage": 0
+          }
+        },
+        "overall_base_match": 71.42857142857143
+      },
+      "absolute_path": "LLM ABAP Programs\\DeepSeekV3.abap"
+    },
+    "GPT4_1.abap": {
+      "parse_result": {
+        "result": {
+          "classes_and_interfaces": [],
+          "functions": [
+            "BAPI_BILLINGDOC_CREATEMULTIPLE",
+            "BAPI_OUTB_DELIVERY_CREATE_SLS",
+            "BAPI_SALESORDER_CHANGE",
+            "BAPI_SALESORDER_GETDETAIL",
+            "BAPI_SALESORDER_GETSTATUS",
+            "BAPI_TRANSACTION_COMMIT",
+            "REUSE_ALV_GRID_DISPLAY",
+            "SD_DOCUMENT_FLOW_GET"
+          ],
+          "database_tables": [
+            "VBAK"
+          ],
+          "other_ddic_dependencies": [
+            "BAPIRET2",
+            "SDIT_VBFA",
+            "VBAK",
+            "VBAP"
+          ]
+        },
+        "execution_time": 0.02604079246520996,
+        "status": "success",
+        "file_size": 3023
+      },
+      "analysis": {
+        "categories": {
+          "classes_and_interfaces": {
+            "items": [],
+            "count": 0
+          },
+          "functions": {
+            "items": [
+              "BAPI_BILLINGDOC_CREATEMULTIPLE",
+              "BAPI_OUTB_DELIVERY_CREATE_SLS",
+              "BAPI_SALESORDER_CHANGE",
+              "BAPI_SALESORDER_GETDETAIL",
+              "BAPI_SALESORDER_GETSTATUS",
+              "BAPI_TRANSACTION_COMMIT",
+              "REUSE_ALV_GRID_DISPLAY",
+              "SD_DOCUMENT_FLOW_GET"
+            ],
+            "count": 8
+          },
+          "database_tables": {
+            "items": [
+              "VBAK"
+            ],
+            "count": 1
+          },
+          "other_ddic_dependencies": {
+            "items": [
+              "BAPIRET2",
+              "SDIT_VBFA",
+              "VBAK",
+              "VBAP"
+            ],
+            "count": 4
+          }
+        },
+        "total_objects": 13,
+        "base_match_stats": {
+          "classes_and_interfaces": {
+            "existing": 0,
+            "total": 0,
+            "percentage": 0
+          },
+          "functions": {
+            "existing": 7,
+            "total": 8,
+            "percentage": 87.5
+          },
+          "database_tables": {
+            "existing": 1,
+            "total": 1,
+            "percentage": 100.0
+          }
+        },
+        "overall_base_match": 88.88888888888889
+      },
+      "absolute_path": "LLM ABAP Programs\\GPT4_1.abap"
+    },
+    "GPT4o.abap": {
+      "parse_result": {
+        "result": {
+          "classes_and_interfaces": [
+            "CL_SALV_TABLE",
+            "CX_STATIC_CHECK"
+          ],
+          "functions": [
+            "BAPI_BILLINGDOC_CREATEMULTIPLE",
+            "BAPI_DOCUMENT_FLOW_GETDETAIL",
+            "BAPI_OUTB_DELIVERY_CREATE_SLS",
+            "BAPI_SALESORDER_CHANGE",
+            "BAPI_SALESORDER_GETDETAIL",
+            "BAPI_SALESORDER_GETSTATUS",
+            "BAPI_TRANSACTION_COMMIT"
+          ],
+          "database_tables": [],
+          "other_ddic_dependencies": [
+            "BAPIRET2",
+            "CHAR1",
+            "VBAK",
+            "VBAP",
+            "VBFA"
+          ]
+        },
+        "execution_time": 0.11335134506225586,
+        "status": "success",
+        "file_size": 3898
+      },
+      "analysis": {
+        "categories": {
+          "classes_and_interfaces": {
+            "items": [
+              "CL_SALV_TABLE",
+              "CX_STATIC_CHECK"
+            ],
+            "count": 2
+          },
+          "functions": {
+            "items": [
+              "BAPI_BILLINGDOC_CREATEMULTIPLE",
+              "BAPI_DOCUMENT_FLOW_GETDETAIL",
+              "BAPI_OUTB_DELIVERY_CREATE_SLS",
+              "BAPI_SALESORDER_CHANGE",
+              "BAPI_SALESORDER_GETDETAIL",
+              "BAPI_SALESORDER_GETSTATUS",
+              "BAPI_TRANSACTION_COMMIT"
+            ],
+            "count": 7
+          },
+          "database_tables": {
+            "items": [],
+            "count": 0
+          },
+          "other_ddic_dependencies": {
+            "items": [
+              "BAPIRET2",
+              "CHAR1",
+              "VBAK",
+              "VBAP",
+              "VBFA"
+            ],
+            "count": 5
+          }
+        },
+        "total_objects": 14,
+        "base_match_stats": {
+          "classes_and_interfaces": {
+            "existing": 2,
+            "total": 2,
+            "percentage": 100.0
+          },
+          "functions": {
+            "existing": 5,
+            "total": 7,
+            "percentage": 71.42857142857143
+          },
+          "database_tables": {
+            "existing": 0,
+            "total": 0,
+            "percentage": 0
+          }
+        },
+        "overall_base_match": 77.77777777777779
+      },
+      "absolute_path": "LLM ABAP Programs\\GPT4o.abap"
+    },
+    "GPT_o3.abap": {
+      "parse_result": {
+        "result": {
+          "classes_and_interfaces": [
+            "CL_SALV_TABLE"
+          ],
+          "functions": [
+            "BAPI_BILLINGDOC_CREATEMULTIPLE",
+            "BAPI_OUTB_DELIVERY_CREATE_SLS",
+            "BAPI_SALESORDER_CHANGE",
+            "BAPI_SALESORDER_GETDETAIL",
+            "BAPI_SALESORDER_GETDOCFLOW",
+            "BAPI_SALESORDER_GETSTATUS",
+            "BAPI_TRANSACTION_COMMIT"
+          ],
+          "database_tables": [
+            "VBAK"
+          ],
+          "other_ddic_dependencies": [
+            "BAPIDOCFLOW",
+            "BAPIRET2",
+            "BAPISDH1",
+            "BAPISDITM",
+            "BAPISDSFH",
+            "ERDAT",
+            "TY_S_DISPLAY",
+            "VBELN_VL"
+          ]
+        },
+        "execution_time": 0.0840919017791748,
+        "status": "success",
+        "file_size": 4514
+      },
+      "analysis": {
+        "categories": {
+          "classes_and_interfaces": {
+            "items": [
+              "CL_SALV_TABLE"
+            ],
+            "count": 1
+          },
+          "functions": {
+            "items": [
+              "BAPI_BILLINGDOC_CREATEMULTIPLE",
+              "BAPI_OUTB_DELIVERY_CREATE_SLS",
+              "BAPI_SALESORDER_CHANGE",
+              "BAPI_SALESORDER_GETDETAIL",
+              "BAPI_SALESORDER_GETDOCFLOW",
+              "BAPI_SALESORDER_GETSTATUS",
+              "BAPI_TRANSACTION_COMMIT"
+            ],
+            "count": 7
+          },
+          "database_tables": {
+            "items": [
+              "VBAK"
+            ],
+            "count": 1
+          },
+          "other_ddic_dependencies": {
+            "items": [
+              "BAPIDOCFLOW",
+              "BAPIRET2",
+              "BAPISDH1",
+              "BAPISDITM",
+              "BAPISDSFH",
+              "ERDAT",
+              "TY_S_DISPLAY",
+              "VBELN_VL"
+            ],
+            "count": 8
+          }
+        },
+        "total_objects": 17,
+        "base_match_stats": {
+          "classes_and_interfaces": {
+            "existing": 1,
+            "total": 1,
+            "percentage": 100.0
+          },
+          "functions": {
+            "existing": 5,
+            "total": 7,
+            "percentage": 71.42857142857143
+          },
+          "database_tables": {
+            "existing": 1,
+            "total": 1,
+            "percentage": 100.0
+          }
+        },
+        "overall_base_match": 77.77777777777779
+      },
+      "absolute_path": "LLM ABAP Programs\\GPT_o3.abap"
+    },
+    "Gemini25_Flash.abap": {
+      "parse_result": {
+        "result": {
+          "classes_and_interfaces": [
+            "CL_SALV_TABLE"
+          ],
+          "functions": [
+            "BAPI_BILLINGDOC_CREATE_FROM_DELIVERY",
+            "BAPI_DELIVERY_CREATE_FROM_SALESORDER",
+            "BAPI_SALESORDER_CHANGE",
+            "BAPI_SALESORDER_GETDETAILEDLIST",
+            "BAPI_SALESORDER_GETSTATUS",
+            "BAPI_TRANSACTION_COMMIT"
+          ],
+          "database_tables": [],
+          "other_ddic_dependencies": [
+            "BAPIRET2",
+            "BAPISDHD1",
+            "BAPISDHD1X",
+            "BAPI_BILLDOC_CREATE_FROM_DELIV_REQ",
+            "BAPI_BILLDOC_CREATE_FROM_DELIV_RES",
+            "BAPI_DELIV_CREATE_FROM_SO_REQ",
+            "BAPI_DELIV_CREATE_FROM_SO_RES",
+            "ERDAT",
+            "OBJ_TYPE",
+            "STRUCT_ALV_DOC_FLOW",
+            "SWW_CONT",
+            "VBAK",
+            "VBAP",
+            "VBELN_VL"
+          ]
+        },
+        "execution_time": 0.018745899200439453,
+        "status": "success",
+        "file_size": 6372
+      },
+      "analysis": {
+        "categories": {
+          "classes_and_interfaces": {
+            "items": [
+              "CL_SALV_TABLE"
+            ],
+            "count": 1
+          },
+          "functions": {
+            "items": [
+              "BAPI_BILLINGDOC_CREATE_FROM_DELIVERY",
+              "BAPI_DELIVERY_CREATE_FROM_SALESORDER",
+              "BAPI_SALESORDER_CHANGE",
+              "BAPI_SALESORDER_GETDETAILEDLIST",
+              "BAPI_SALESORDER_GETSTATUS",
+              "BAPI_TRANSACTION_COMMIT"
+            ],
+            "count": 6
+          },
+          "database_tables": {
+            "items": [],
+            "count": 0
+          },
+          "other_ddic_dependencies": {
+            "items": [
+              "BAPIRET2",
+              "BAPISDHD1",
+              "BAPISDHD1X",
+              "BAPI_BILLDOC_CREATE_FROM_DELIV_REQ",
+              "BAPI_BILLDOC_CREATE_FROM_DELIV_RES",
+              "BAPI_DELIV_CREATE_FROM_SO_REQ",
+              "BAPI_DELIV_CREATE_FROM_SO_RES",
+              "ERDAT",
+              "OBJ_TYPE",
+              "STRUCT_ALV_DOC_FLOW",
+              "SWW_CONT",
+              "VBAK",
+              "VBAP",
+              "VBELN_VL"
+            ],
+            "count": 14
+          }
+        },
+        "total_objects": 21,
+        "base_match_stats": {
+          "classes_and_interfaces": {
+            "existing": 1,
+            "total": 1,
+            "percentage": 100.0
+          },
+          "functions": {
+            "existing": 3,
+            "total": 6,
+            "percentage": 50.0
+          },
+          "database_tables": {
+            "existing": 0,
+            "total": 0,
+            "percentage": 0
+          }
+        },
+        "overall_base_match": 57.14285714285714
+      },
+      "absolute_path": "LLM ABAP Programs\\Gemini25_Flash.abap"
+    },
+    "Gemini25_Pro.abap": {
+      "parse_result": {
+        "result": {
+          "classes_and_interfaces": [
+            "CL_ABAP_CONTEXT_INFO",
+            "CL_SALV_TABLE",
+            "CX_ROOT",
+            "CX_STATIC_CHECK"
+          ],
+          "functions": [
+            "BAPI_BILLINGDOC_CREATEFROMDATA",
+            "BAPI_OUTB_DELIVERY_CREATE_SLS",
+            "BAPI_SALESORDER_CHANGE",
+            "BAPI_SALESORDER_GETSTATUS",
+            "BAPI_TRANSACTION_COMMIT"
+          ],
+          "database_tables": [
+            "VBFA"
+          ],
+          "other_ddic_dependencies": [
+            "BAPIDLVCREATEHDR",
+            "BAPIRETTAB",
+            "BAPISDITEM",
+            "BAPI_INCINV_CREATE_ITEM",
+            "CHAR1",
+            "ERDAT",
+            "TY_DOC_FLOW",
+            "VBELN_VA",
+            "VBELN_VF",
+            "VBELN_VL",
+            "VBFA"
+          ]
+        },
+        "execution_time": 0.057610511779785156,
+        "status": "success",
+        "file_size": 7325
+      },
+      "analysis": {
+        "categories": {
+          "classes_and_interfaces": {
+            "items": [
+              "CL_ABAP_CONTEXT_INFO",
+              "CL_SALV_TABLE",
+              "CX_ROOT",
+              "CX_STATIC_CHECK"
+            ],
+            "count": 4
+          },
+          "functions": {
+            "items": [
+              "BAPI_BILLINGDOC_CREATEFROMDATA",
+              "BAPI_OUTB_DELIVERY_CREATE_SLS",
+              "BAPI_SALESORDER_CHANGE",
+              "BAPI_SALESORDER_GETSTATUS",
+              "BAPI_TRANSACTION_COMMIT"
+            ],
+            "count": 5
+          },
+          "database_tables": {
+            "items": [
+              "VBFA"
+            ],
+            "count": 1
+          },
+          "other_ddic_dependencies": {
+            "items": [
+              "BAPIDLVCREATEHDR",
+              "BAPIRETTAB",
+              "BAPISDITEM",
+              "BAPI_INCINV_CREATE_ITEM",
+              "CHAR1",
+              "ERDAT",
+              "TY_DOC_FLOW",
+              "VBELN_VA",
+              "VBELN_VF",
+              "VBELN_VL",
+              "VBFA"
+            ],
+            "count": 11
+          }
+        },
+        "total_objects": 21,
+        "base_match_stats": {
+          "classes_and_interfaces": {
+            "existing": 4,
+            "total": 4,
+            "percentage": 100.0
+          },
+          "functions": {
+            "existing": 5,
+            "total": 5,
+            "percentage": 100.0
+          },
+          "database_tables": {
+            "existing": 1,
+            "total": 1,
+            "percentage": 100.0
+          }
+        },
+        "overall_base_match": 100.0
+      },
+      "absolute_path": "LLM ABAP Programs\\Gemini25_Pro.abap"
+    },
+    "Grok4.abap": {
+      "parse_result": {
+        "result": {
+          "classes_and_interfaces": [
+            "CL_SALV_TABLE"
+          ],
+          "functions": [
+            "BAPI_BILLINGDOC_CREATEMULTIPLE",
+            "BAPI_OUTB_DELIVERY_CREATE_SLS",
+            "BAPI_SALESORDER_CHANGE",
+            "BAPI_SALESORDER_GETDETAIL",
+            "BAPI_TRANSACTION_COMMIT"
+          ],
+          "database_tables": [],
+          "other_ddic_dependencies": [
+            "BAPIRET2",
+            "BAPISDH1",
+            "BAPISDH1X",
+            "BAPISDHD1",
+            "BAPISDITM",
+            "BAPIVBRK",
+            "BAPIVBRKSUCCESS",
+            "DATS",
+            "VBELN_VL"
+          ]
+        },
+        "execution_time": 0.0180509090423584,
+        "status": "success",
+        "file_size": 3737
+      },
+      "analysis": {
+        "categories": {
+          "classes_and_interfaces": {
+            "items": [
+              "CL_SALV_TABLE"
+            ],
+            "count": 1
+          },
+          "functions": {
+            "items": [
+              "BAPI_BILLINGDOC_CREATEMULTIPLE",
+              "BAPI_OUTB_DELIVERY_CREATE_SLS",
+              "BAPI_SALESORDER_CHANGE",
+              "BAPI_SALESORDER_GETDETAIL",
+              "BAPI_TRANSACTION_COMMIT"
+            ],
+            "count": 5
+          },
+          "database_tables": {
+            "items": [],
+            "count": 0
+          },
+          "other_ddic_dependencies": {
+            "items": [
+              "BAPIRET2",
+              "BAPISDH1",
+              "BAPISDH1X",
+              "BAPISDHD1",
+              "BAPISDITM",
+              "BAPIVBRK",
+              "BAPIVBRKSUCCESS",
+              "DATS",
+              "VBELN_VL"
+            ],
+            "count": 9
+          }
+        },
+        "total_objects": 15,
+        "base_match_stats": {
+          "classes_and_interfaces": {
+            "existing": 1,
+            "total": 1,
+            "percentage": 100.0
+          },
+          "functions": {
+            "existing": 4,
+            "total": 5,
+            "percentage": 80.0
+          },
+          "database_tables": {
+            "existing": 0,
+            "total": 0,
+            "percentage": 0
+          }
+        },
+        "overall_base_match": 83.33333333333334
+      },
+      "absolute_path": "LLM ABAP Programs\\Grok4.abap"
+    },
+    "KimiK2.abap": {
+      "parse_result": {
+        "result": {
+          "classes_and_interfaces": [
+            "CL_GUI_ALV_GRID",
+            "CL_SALV_TABLE",
+            "CX_STATIC_CHECK"
+          ],
+          "functions": [
+            "BAPI_BILLINGDOC_CREATEMULTIPLE",
+            "BAPI_DELIVERYPROCESSING_EXECUTE",
+            "BAPI_SALESORDER_CHANGE",
+            "BAPI_SALESORDER_GETDETAIL",
+            "BAPI_SALESORDER_GETSTATUS",
+            "BAPI_TRANSACTION_COMMIT",
+            "RV_DOCUMENT_FLOW"
+          ],
+          "database_tables": [],
+          "other_ddic_dependencies": [
+            "ERDAT",
+            "OBJCAT",
+            "VBELN"
+          ]
+        },
+        "execution_time": 0.015229940414428711,
+        "status": "success",
+        "file_size": 5699
+      },
+      "analysis": {
+        "categories": {
+          "classes_and_interfaces": {
+            "items": [
+              "CL_GUI_ALV_GRID",
+              "CL_SALV_TABLE",
+              "CX_STATIC_CHECK"
+            ],
+            "count": 3
+          },
+          "functions": {
+            "items": [
+              "BAPI_BILLINGDOC_CREATEMULTIPLE",
+              "BAPI_DELIVERYPROCESSING_EXECUTE",
+              "BAPI_SALESORDER_CHANGE",
+              "BAPI_SALESORDER_GETDETAIL",
+              "BAPI_SALESORDER_GETSTATUS",
+              "BAPI_TRANSACTION_COMMIT",
+              "RV_DOCUMENT_FLOW"
+            ],
+            "count": 7
+          },
+          "database_tables": {
+            "items": [],
+            "count": 0
+          },
+          "other_ddic_dependencies": {
+            "items": [
+              "ERDAT",
+              "OBJCAT",
+              "VBELN"
+            ],
+            "count": 3
+          }
+        },
+        "total_objects": 13,
+        "base_match_stats": {
+          "classes_and_interfaces": {
+            "existing": 3,
+            "total": 3,
+            "percentage": 100.0
+          },
+          "functions": {
+            "existing": 4,
+            "total": 7,
+            "percentage": 57.14285714285714
+          },
+          "database_tables": {
+            "existing": 0,
+            "total": 0,
+            "percentage": 0
+          }
+        },
+        "overall_base_match": 70.0
+      },
+      "absolute_path": "LLM ABAP Programs\\KimiK2.abap"
+    },
+    "Qwen3_Coder.abap": {
+      "parse_result": {
+        "result": {
+          "classes_and_interfaces": [
+            "CL_SALV_TABLE",
+            "CX_SALV_ERROR",
+            "CX_STATIC_CHECK"
+          ],
+          "functions": [
+            "BAPI_BILLINGDOC_CREATEMULTIPLE",
+            "BAPI_OUTB_DELIVERY_CREATE_SLS",
+            "BAPI_SALESORDER_CHANGE",
+            "BAPI_SALESORDER_GETDETAIL",
+            "BAPI_TRANSACTION_COMMIT"
+          ],
+          "database_tables": [
+            "VBAP",
+            "VBFA"
+          ],
+          "other_ddic_dependencies": [
+            "BAPIBUS2017",
+            "BAPIBUS2018",
+            "BAPIDLVCREATEDHEADER",
+            "BAPIDLVITEMCREATION",
+            "BAPIRET2",
+            "BAPISDH1",
+            "BAPISDH1X",
+            "BAPISDHD1",
+            "POSNR",
+            "PREVIOUS",
+            "TEXTID",
+            "TT_DOC_FLOW_LINE",
+            "TY_DOC_FLOW_LINE",
+            "VBELN",
+            "VBFA"
+          ]
+        },
+        "execution_time": 0.09698867797851562,
+        "status": "success",
+        "file_size": 11733
+      },
+      "analysis": {
+        "categories": {
+          "classes_and_interfaces": {
+            "items": [
+              "CL_SALV_TABLE",
+              "CX_SALV_ERROR",
+              "CX_STATIC_CHECK"
+            ],
+            "count": 3
+          },
+          "functions": {
+            "items": [
+              "BAPI_BILLINGDOC_CREATEMULTIPLE",
+              "BAPI_OUTB_DELIVERY_CREATE_SLS",
+              "BAPI_SALESORDER_CHANGE",
+              "BAPI_SALESORDER_GETDETAIL",
+              "BAPI_TRANSACTION_COMMIT"
+            ],
+            "count": 5
+          },
+          "database_tables": {
+            "items": [
+              "VBAP",
+              "VBFA"
+            ],
+            "count": 2
+          },
+          "other_ddic_dependencies": {
+            "items": [
+              "BAPIBUS2017",
+              "BAPIBUS2018",
+              "BAPIDLVCREATEDHEADER",
+              "BAPIDLVITEMCREATION",
+              "BAPIRET2",
+              "BAPISDH1",
+              "BAPISDH1X",
+              "BAPISDHD1",
+              "POSNR",
+              "PREVIOUS",
+              "TEXTID",
+              "TT_DOC_FLOW_LINE",
+              "TY_DOC_FLOW_LINE",
+              "VBELN",
+              "VBFA"
+            ],
+            "count": 15
+          }
+        },
+        "total_objects": 25,
+        "base_match_stats": {
+          "classes_and_interfaces": {
+            "existing": 3,
+            "total": 3,
+            "percentage": 100.0
+          },
+          "functions": {
+            "existing": 4,
+            "total": 5,
+            "percentage": 80.0
+          },
+          "database_tables": {
+            "existing": 2,
+            "total": 2,
+            "percentage": 100.0
+          }
+        },
+        "overall_base_match": 90.0
+      },
+      "absolute_path": "LLM ABAP Programs\\Qwen3_Coder.abap"
+    },
+    "Sonnet35.abap": {
+      "parse_result": {
+        "result": {
+          "classes_and_interfaces": [],
+          "functions": [
+            "BAPI_BILLINGDOC_CREATEMULTIPLE",
+            "BAPI_DOCUMENT_FLOW2",
+            "BAPI_OUTB_DELIVERY_CREATE_SLS",
+            "BAPI_SALESORDER_CHANGE",
+            "BAPI_SALESORDER_GETDETAILALL",
+            "BAPI_TRANSACTION_COMMIT",
+            "REUSE_ALV_FIELDCATALOG_MERGE",
+            "REUSE_ALV_GRID_DISPLAY"
+          ],
+          "database_tables": [],
+          "other_ddic_dependencies": [
+            "BAPIDLVHEADEREXP",
+            "BAPIDLVREFTOSALESORDER",
+            "BAPIRET2",
+            "BAPISDH1",
+            "BAPISDITM",
+            "BAPIVBFA",
+            "BAPI_DLV_BILLING_ITEM",
+            "SLIS_T_FIELDCAT_ALV",
+            "VBELN",
+            "VBELN_VL"
+          ]
+        },
+        "execution_time": 0.051892757415771484,
+        "status": "success",
+        "file_size": 3847
+      },
+      "analysis": {
+        "categories": {
+          "classes_and_interfaces": {
+            "items": [],
+            "count": 0
+          },
+          "functions": {
+            "items": [
+              "BAPI_BILLINGDOC_CREATEMULTIPLE",
+              "BAPI_DOCUMENT_FLOW2",
+              "BAPI_OUTB_DELIVERY_CREATE_SLS",
+              "BAPI_SALESORDER_CHANGE",
+              "BAPI_SALESORDER_GETDETAILALL",
+              "BAPI_TRANSACTION_COMMIT",
+              "REUSE_ALV_FIELDCATALOG_MERGE",
+              "REUSE_ALV_GRID_DISPLAY"
+            ],
+            "count": 8
+          },
+          "database_tables": {
+            "items": [],
+            "count": 0
+          },
+          "other_ddic_dependencies": {
+            "items": [
+              "BAPIDLVHEADEREXP",
+              "BAPIDLVREFTOSALESORDER",
+              "BAPIRET2",
+              "BAPISDH1",
+              "BAPISDITM",
+              "BAPIVBFA",
+              "BAPI_DLV_BILLING_ITEM",
+              "SLIS_T_FIELDCAT_ALV",
+              "VBELN",
+              "VBELN_VL"
+            ],
+            "count": 10
+          }
+        },
+        "total_objects": 18,
+        "base_match_stats": {
+          "classes_and_interfaces": {
+            "existing": 0,
+            "total": 0,
+            "percentage": 0
+          },
+          "functions": {
+            "existing": 6,
+            "total": 8,
+            "percentage": 75.0
+          },
+          "database_tables": {
+            "existing": 0,
+            "total": 0,
+            "percentage": 0
+          }
+        },
+        "overall_base_match": 75.0
+      },
+      "absolute_path": "LLM ABAP Programs\\Sonnet35.abap"
+    },
+    "Sonnet37.abap": {
+      "parse_result": {
+        "result": {
+          "classes_and_interfaces": [],
+          "functions": [
+            "BAPI_BILLINGDOC_CREATEMULTIPLE",
+            "BAPI_DOCUMENT_FLOW2",
+            "BAPI_OUTB_DELIVERY_CREATE_SLS",
+            "BAPI_SALESORDER_CHANGE",
+            "BAPI_SALESORDER_GETDETAILBOS",
+            "BAPI_TRANSACTION_COMMIT",
+            "REUSE_ALV_FIELDCATALOG_MERGE",
+            "REUSE_ALV_GRID_DISPLAY"
+          ],
+          "database_tables": [],
+          "other_ddic_dependencies": [
+            "BAPIDLVREFTOSALESORDER",
+            "BAPIRET2",
+            "BAPISDHD1",
+            "BAPISDHD1X",
+            "BAPISDITM",
+            "BAPIVBFA",
+            "BAPI_DLV_BILLING_ITEM",
+            "CHAR4",
+            "DATUM",
+            "SLIS_T_FIELDCAT_ALV",
+            "TY_ALV",
+            "VBELN",
+            "VBELN_VL"
+          ]
+        },
+        "execution_time": 0.01452183723449707,
+        "status": "success",
+        "file_size": 5644
+      },
+      "analysis": {
+        "categories": {
+          "classes_and_interfaces": {
+            "items": [],
+            "count": 0
+          },
+          "functions": {
+            "items": [
+              "BAPI_BILLINGDOC_CREATEMULTIPLE",
+              "BAPI_DOCUMENT_FLOW2",
+              "BAPI_OUTB_DELIVERY_CREATE_SLS",
+              "BAPI_SALESORDER_CHANGE",
+              "BAPI_SALESORDER_GETDETAILBOS",
+              "BAPI_TRANSACTION_COMMIT",
+              "REUSE_ALV_FIELDCATALOG_MERGE",
+              "REUSE_ALV_GRID_DISPLAY"
+            ],
+            "count": 8
+          },
+          "database_tables": {
+            "items": [],
+            "count": 0
+          },
+          "other_ddic_dependencies": {
+            "items": [
+              "BAPIDLVREFTOSALESORDER",
+              "BAPIRET2",
+              "BAPISDHD1",
+              "BAPISDHD1X",
+              "BAPISDITM",
+              "BAPIVBFA",
+              "BAPI_DLV_BILLING_ITEM",
+              "CHAR4",
+              "DATUM",
+              "SLIS_T_FIELDCAT_ALV",
+              "TY_ALV",
+              "VBELN",
+              "VBELN_VL"
+            ],
+            "count": 13
+          }
+        },
+        "total_objects": 21,
+        "base_match_stats": {
+          "classes_and_interfaces": {
+            "existing": 0,
+            "total": 0,
+            "percentage": 0
+          },
+          "functions": {
+            "existing": 7,
+            "total": 8,
+            "percentage": 87.5
+          },
+          "database_tables": {
+            "existing": 0,
+            "total": 0,
+            "percentage": 0
+          }
+        },
+        "overall_base_match": 87.5
+      },
+      "absolute_path": "LLM ABAP Programs\\Sonnet37.abap"
+    },
+    "Sonnet4.abap": {
+      "parse_result": {
+        "result": {
+          "classes_and_interfaces": [
+            "CL_SALV_TABLE"
+          ],
+          "functions": [
+            "BAPI_BILLINGDOC_CREATE1",
+            "BAPI_OUTB_DELIVERY_CREATE_SLS",
+            "BAPI_SALESORDER_CHANGE",
+            "BAPI_SALESORDER_GETSTATUS",
+            "BAPI_TRANSACTION_COMMIT"
+          ],
+          "database_tables": [
+            "VBFA"
+          ],
+          "other_ddic_dependencies": [
+            "BAPIDELIVCREATEDITEMS",
+            "BAPIDLVREFTOSALESORDER",
+            "BAPIRET2",
+            "BAPISDH1",
+            "BAPISDH1X",
+            "BAPISDITM",
+            "BAPIVBRKSIMULATEDITEMS",
+            "CA",
+            "SCX_ATTRNAME",
+            "SYMSGID",
+            "SYMSGNO",
+            "TT_DOC_FLOW",
+            "TY_DOC_FLOW"
+          ]
+        },
+        "execution_time": 0.06278061866760254,
+        "status": "success",
+        "file_size": 10259
+      },
+      "analysis": {
+        "categories": {
+          "classes_and_interfaces": {
+            "items": [
+              "CL_SALV_TABLE"
+            ],
+            "count": 1
+          },
+          "functions": {
+            "items": [
+              "BAPI_BILLINGDOC_CREATE1",
+              "BAPI_OUTB_DELIVERY_CREATE_SLS",
+              "BAPI_SALESORDER_CHANGE",
+              "BAPI_SALESORDER_GETSTATUS",
+              "BAPI_TRANSACTION_COMMIT"
+            ],
+            "count": 5
+          },
+          "database_tables": {
+            "items": [
+              "VBFA"
+            ],
+            "count": 1
+          },
+          "other_ddic_dependencies": {
+            "items": [
+              "BAPIDELIVCREATEDITEMS",
+              "BAPIDLVREFTOSALESORDER",
+              "BAPIRET2",
+              "BAPISDH1",
+              "BAPISDH1X",
+              "BAPISDITM",
+              "BAPIVBRKSIMULATEDITEMS",
+              "CA",
+              "SCX_ATTRNAME",
+              "SYMSGID",
+              "SYMSGNO",
+              "TT_DOC_FLOW",
+              "TY_DOC_FLOW"
+            ],
+            "count": 13
+          }
+        },
+        "total_objects": 20,
+        "base_match_stats": {
+          "classes_and_interfaces": {
+            "existing": 1,
+            "total": 1,
+            "percentage": 100.0
+          },
+          "functions": {
+            "existing": 4,
+            "total": 5,
+            "percentage": 80.0
+          },
+          "database_tables": {
+            "existing": 1,
+            "total": 1,
+            "percentage": 100.0
+          }
+        },
+        "overall_base_match": 85.71428571428571
+      },
+      "absolute_path": "LLM ABAP Programs\\Sonnet4.abap"
+    }
+  }
+}
